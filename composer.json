@@ -17,7 +17,7 @@
     "require-dev": {
         "wyrihaximus/cs-fixer-config": "^1.0",
         "wyrihaximus/async-test-utilities": "^1.1",
-        "ringcentral/psr7": "^1.2"
+        "ringcentral/psr7": "^1.2.2"
     },
     "autoload": {
         "psr-4": {
