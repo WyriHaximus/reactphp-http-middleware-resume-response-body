@@ -1,6 +1,6 @@
 # Middleware that resumes response bodies if they are streaming
 
-[![Build Status](https://travis-ci.org/WyriHaximus/reactphp-http-middleware-resume-response-body.svg?branch=master)](https://travis-ci.org/WyriHaximus/reactphp-http-middleware-resume-response-body)
+![Continuous Integration](https://github.com/WyriHaximus/react-http-middleware-resume-response-body/workflows/Continuous%20Integration/badge.svg)
 [![Latest Stable Version](https://poser.pugx.org/WyriHaximus/react-http-middleware-resume-response-body/v/stable.png)](https://packagist.org/packages/WyriHaximus/react-http-middleware-resume-response-body)
 [![Total Downloads](https://poser.pugx.org/WyriHaximus/react-http-middleware-resume-response-body/downloads.png)](https://packagist.org/packages/WyriHaximus/react-http-middleware-resume-response-body)
 [![Code Coverage](https://scrutinizer-ci.com/g/WyriHaximus/reactphp-http-middleware-resume-response-body/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/WyriHaximus/reactphp-http-middleware-resume-response-body/?branch=master)
@@ -18,18 +18,19 @@ composer require wyrihaximus/react-http-middleware-resume-response-body
 # Usage
 
 ```php
-$server = new Server([
+$server = new Server(
+    $loop,
     /** Other Middleware */
     new ResumeResponseBodyMiddleware(),
     /** Other Middleware */
-]);
+);
 ```
 
 # License
 
 The MIT License (MIT)
 
-Copyright (c) 2019 Cees-Jan Kiewiet
+Copyright (c) 2020 Cees-Jan Kiewiet
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
