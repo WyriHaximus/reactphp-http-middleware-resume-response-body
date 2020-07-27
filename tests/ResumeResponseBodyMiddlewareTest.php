@@ -1,10 +1,12 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace WyriHaximus\React\Tests\Http\Middleware;
 
 use React\EventLoop\Factory;
 use React\Http\Io\HttpBodyStream;
-use React\Http\Response;
+use React\Http\Message\Response;
 use RingCentral\Psr7\ServerRequest;
 use WyriHaximus\AsyncTestUtilities\AsyncTestCase;
 use WyriHaximus\React\Http\Middleware\ResumeResponseBodyMiddleware;
@@ -23,7 +25,7 @@ final class ResumeResponseBodyMiddlewareTest extends AsyncTestCase
 
         $response = (new Response())->withBody($body->reveal());
 
-        $next = function () use ($response) {
+        $next = static function () use ($response) {
             return $response;
         };
 
