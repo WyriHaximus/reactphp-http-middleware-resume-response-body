@@ -4,7 +4,8 @@ declare(strict_types=1);
 
 namespace WyriHaximus\React\Tests\Http\Middleware;
 
-use React\EventLoop\Factory;
+use Prophecy\Argument;
+use React\EventLoop\LoopInterface;
 use React\Http\Io\HttpBodyStream;
 use React\Http\Message\Response;
 use RingCentral\Psr7\ServerRequest;
@@ -16,9 +17,17 @@ use WyriHaximus\React\Http\Middleware\ResumeResponseBodyMiddleware;
  */
 final class ResumeResponseBodyMiddlewareTest extends AsyncTestCase
 {
-    public function testResume(): void
+    /**
+     * @test
+     */
+    public function resume(): void
     {
-        $loop = Factory::create();
+        $loop = $this->prophesize(LoopInterface::class);
+        $loop->futureTick(Argument::that(static function (array $args): bool {
+            $args[0]->{$args[1]}(); /** @phpstan-ignore-line */
+
+            return true;
+        }))->shouldBeCalled();
 
         $body = $this->prophesize(HttpBodyStream::class);
         $body->resume()->shouldBeCalled();
@@ -29,9 +38,7 @@ final class ResumeResponseBodyMiddlewareTest extends AsyncTestCase
             return $response;
         };
 
-        $middleware = new ResumeResponseBodyMiddleware($loop);
+        $middleware = new ResumeResponseBodyMiddleware($loop->reveal());
         $middleware(new ServerRequest('GET', 'https://example.com/'), $next);
-
-        $loop->run();
     }
 }
