@@ -1656,21 +1656,21 @@
         },
         {
             "name": "ergebnis/composer-normalize",
-            "version": "2.13.0",
+            "version": "2.13.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ergebnis/composer-normalize.git",
-                "reference": "23f34eb43d8c4fccc7acb9173488f48e102f7a30"
+                "reference": "1255dbc6acb55cb439ce871513b3877a43473a59"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ergebnis/composer-normalize/zipball/23f34eb43d8c4fccc7acb9173488f48e102f7a30",
-                "reference": "23f34eb43d8c4fccc7acb9173488f48e102f7a30",
+                "url": "https://api.github.com/repos/ergebnis/composer-normalize/zipball/1255dbc6acb55cb439ce871513b3877a43473a59",
+                "reference": "1255dbc6acb55cb439ce871513b3877a43473a59",
                 "shasum": ""
             },
             "require": {
                 "composer-plugin-api": "^1.1.0 || ^2.0.0",
-                "ergebnis/json-normalizer": "^1.0.1",
+                "ergebnis/json-normalizer": "^1.0.2",
                 "ergebnis/json-printer": "^3.1.1",
                 "justinrainbow/json-schema": "^5.2.10",
                 "localheinz/diff": "^1.1.1",
@@ -1733,20 +1733,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-12-30T16:06:10+00:00"
+            "time": "2020-12-31T09:51:22+00:00"
         },
         {
             "name": "ergebnis/json-normalizer",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ergebnis/json-normalizer.git",
-                "reference": "f80e5603ab425b49539951b0a684e138be6ee9a7"
+                "reference": "6da58f6b555959c07724181744664e732555d0be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ergebnis/json-normalizer/zipball/f80e5603ab425b49539951b0a684e138be6ee9a7",
-                "reference": "f80e5603ab425b49539951b0a684e138be6ee9a7",
+                "url": "https://api.github.com/repos/ergebnis/json-normalizer/zipball/6da58f6b555959c07724181744664e732555d0be",
+                "reference": "6da58f6b555959c07724181744664e732555d0be",
                 "shasum": ""
             },
             "require": {
@@ -1803,7 +1803,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-12-30T15:16:58+00:00"
+            "time": "2020-12-31T09:27:51+00:00"
         },
         {
             "name": "ergebnis/json-printer",
@@ -8454,16 +8454,16 @@
         },
         {
             "name": "wyrihaximus/async-test-utilities",
-            "version": "3.3.1",
+            "version": "3.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/php-async-test-utilities.git",
-                "reference": "bdc235a60c36502bb7f83565fdd75fe2379e9c3f"
+                "reference": "367f22c7507ce491fe29aa683a6bc6b089e7cf5a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/php-async-test-utilities/zipball/bdc235a60c36502bb7f83565fdd75fe2379e9c3f",
-                "reference": "bdc235a60c36502bb7f83565fdd75fe2379e9c3f",
+                "url": "https://api.github.com/repos/WyriHaximus/php-async-test-utilities/zipball/367f22c7507ce491fe29aa683a6bc6b089e7cf5a",
+                "reference": "367f22c7507ce491fe29aa683a6bc6b089e7cf5a",
                 "shasum": ""
             },
             "require": {
@@ -8472,7 +8472,7 @@
                 "phpunit/phpunit": "^9.4",
                 "react/event-loop": "^1.1",
                 "react/promise": "^2.8",
-                "wyrihaximus/test-utilities": "^3.3.1"
+                "wyrihaximus/test-utilities": "^3.3.3"
             },
             "require-dev": {
                 "wyrihaximus/iterator-or-array-to-array": "^1.1"
@@ -8496,7 +8496,7 @@
             "description": "Test utilities for api-clients packages",
             "support": {
                 "issues": "https://github.com/WyriHaximus/php-async-test-utilities/issues",
-                "source": "https://github.com/WyriHaximus/php-async-test-utilities/tree/3.3.1"
+                "source": "https://github.com/WyriHaximus/php-async-test-utilities/tree/3.3.2"
             },
             "funding": [
                 {
@@ -8504,7 +8504,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-11-25T09:57:56+00:00"
+            "time": "2020-12-23T08:01:26+00:00"
         },
         {
             "name": "wyrihaximus/coding-standard",
