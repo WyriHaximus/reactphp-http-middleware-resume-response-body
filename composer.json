@@ -20,12 +20,6 @@
         "ringcentral/psr7": "^1.2.2",
         "wyrihaximus/async-test-utilities": "^4.0.8"
     },
-    "config": {
-        "platform": {
-            "php": "7.4.7"
-        },
-        "sort-packages": true
-    },
     "autoload": {
         "psr-4": {
             "WyriHaximus\\React\\Http\\Middleware\\": "src/"
@@ -36,12 +30,26 @@
             "WyriHaximus\\React\\Tests\\Http\\Middleware\\": "tests/"
         }
     },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "infection/extension-installer": true,
+            "ergebnis/composer-normalize": true,
+            "icanhazstring/composer-unused": true
+        },
+        "platform": {
+            "php": "7.4.7"
+        },
+        "sort-packages": true
+    },
     "scripts": {
         "post-install-cmd": [
-            "composer normalize"
+            "composer normalize",
+            "composer update --lock --no-scripts"
         ],
         "post-update-cmd": [
-            "composer normalize"
+            "composer normalize",
+            "composer update --lock --no-scripts"
         ]
     }
 }
