@@ -14,6 +14,7 @@ use function React\Promise\resolve;
 
 final class ResumeResponseBodyMiddleware
 {
+    /** @return PromiseInterface<ResponseInterface> */
     public function __invoke(ServerRequestInterface $request, callable $next): PromiseInterface
     {
         return resolve($next($request))->then(static function (ResponseInterface $response): ResponseInterface {
