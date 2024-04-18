@@ -1,11 +1,10 @@
 # Middleware that resumes response bodies if they are streaming
 
-![Continuous Integration](https://github.com/WyriHaximus/react-http-middleware-resume-response-body/workflows/Continuous%20Integration/badge.svg)
-[![Latest Stable Version](https://poser.pugx.org/WyriHaximus/react-http-middleware-resume-response-body/v/stable.png)](https://packagist.org/packages/WyriHaximus/react-http-middleware-resume-response-body)
-[![Total Downloads](https://poser.pugx.org/WyriHaximus/react-http-middleware-resume-response-body/downloads.png)](https://packagist.org/packages/WyriHaximus/react-http-middleware-resume-response-body)
-[![Code Coverage](https://scrutinizer-ci.com/g/WyriHaximus/reactphp-http-middleware-resume-response-body/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/WyriHaximus/reactphp-http-middleware-resume-response-body/?branch=master)
-[![License](https://poser.pugx.org/WyriHaximus/react-http-middleware-resume-response-body/license.png)](https://packagist.org/packages/WyriHaximus/react-http-middleware-resume-response-body)
-[![PHP 7 ready](http://php7ready.timesplinter.ch/WyriHaximus/reactphp-http-middleware-clear-body/badge.svg)](https://travis-ci.org/WyriHaximus/reactphp-http-middleware-clear-body)
+[![Continuous Integration](https://github.com/WyriHaximus/reactphp-http-middleware-resume-response-body/actions/workflows/ci.yml/badge.svg)](https://github.com/WyriHaximus/reactphp-http-middleware-resume-response-body/actions/workflows/ci.yml)
+[![Latest Stable Version](https://poser.pugx.org/wyrihaximus/react-http-middleware-resume-response-body/v/stable.png)](https://packagist.org/packages/wyrihaximus/react-http-middleware-resume-response-body)
+[![Total Downloads](https://poser.pugx.org/wyrihaximus/react-http-middleware-resume-response-body/downloads.png)](https://packagist.org/packages/wyrihaximus/react-http-middleware-resume-response-body/stats)
+[![Type Coverage](https://shepherd.dev/github/WyriHaximus/reactphp-http-middleware-resume-response-body/coverage.svg)](https://shepherd.dev/github/WyriHaximus/reactphp-http-middleware-resume-response-body)
+[![License](https://poser.pugx.org/wyrihaximus/react-http-middleware-resume-response-body/license.png)](https://packagist.org/packages/wyrihaximus/react-http-middleware-resume-response-body)
 
 # Install
 
