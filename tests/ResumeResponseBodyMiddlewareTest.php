@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace WyriHaximus\React\Tests\Http\Middleware;
 
 use Mockery;
+use PHPUnit\Framework\Attributes\Test;
 use Psr\Http\Message\ResponseInterface;
 use React\Http\Io\HttpBodyStream;
 use React\Http\Message\Response;
@@ -18,13 +19,15 @@ use function React\Promise\Timer\sleep;
 /** @internal */
 final class ResumeResponseBodyMiddlewareTest extends AsyncTestCase
 {
-    /** @test */
+    #[Test]
     public function resume(): void
     {
+        /** @phpstan-ignore classConstant.internalClass */
         $body = Mockery::mock(HttpBodyStream::class);
         $body->expects('resume');
 
-        $response = (new Response())->withBody($body);
+        /** @phpstan-ignore method.internalClass */
+        $response = new Response()->withBody($body);
 
         $next = static fn (): ResponseInterface => $response;
 
