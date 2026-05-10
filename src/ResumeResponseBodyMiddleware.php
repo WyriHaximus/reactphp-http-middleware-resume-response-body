@@ -17,6 +17,7 @@ final class ResumeResponseBodyMiddleware
     /** @return PromiseInterface<ResponseInterface> */
     public function __invoke(ServerRequestInterface $request, callable $next): PromiseInterface
     {
+        /** @phpstan-ignore argument.type */
         return resolve($next($request))->then(static function (ResponseInterface $response): ResponseInterface {
             $body = $response->getBody();
 
