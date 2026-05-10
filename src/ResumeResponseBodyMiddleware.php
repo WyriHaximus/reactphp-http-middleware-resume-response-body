@@ -22,7 +22,6 @@ final class ResumeResponseBodyMiddleware
             $body = $response->getBody();
 
             if ($body instanceof ReadableStreamInterface) {
-                /** @psalm-suppress InvalidArgument */
                 Loop::futureTick([$body, 'resume']);
             }
 
