@@ -16,7 +16,6 @@ use WyriHaximus\React\Http\Middleware\ResumeResponseBodyMiddleware;
 use function React\Async\await;
 use function React\Promise\Timer\sleep;
 
-/** @internal */
 final class ResumeResponseBodyMiddlewareTest extends AsyncTestCase
 {
     #[Test]
