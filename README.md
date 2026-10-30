@@ -1,6 +1,6 @@
 # Middleware that resumes response bodies if they are streaming
 
-[![Continuous Integration](https://github.com/WyriHaximus/reactphp-http-middleware-resume-response-body/actions/workflows/ci.yml/badge.svg)](https://github.com/WyriHaximus/reactphp-http-middleware-resume-response-body/actions/workflows/ci.yml)
+[![Continuous Integration](https://github.com/WyriHaximus/reactphp-http-middleware-resume-response-body/actions/workflows/ci.yaml/badge.svg)](https://github.com/WyriHaximus/reactphp-http-middleware-resume-response-body/actions/workflows/ci.yaml)
 [![Latest Stable Version](https://poser.pugx.org/wyrihaximus/react-http-middleware-resume-response-body/v/stable.png)](https://packagist.org/packages/wyrihaximus/react-http-middleware-resume-response-body)
 [![Total Downloads](https://poser.pugx.org/wyrihaximus/react-http-middleware-resume-response-body/downloads.png)](https://packagist.org/packages/wyrihaximus/react-http-middleware-resume-response-body/stats)
 [![Type Coverage](https://shepherd.dev/github/WyriHaximus/reactphp-http-middleware-resume-response-body/coverage.svg)](https://shepherd.dev/github/WyriHaximus/reactphp-http-middleware-resume-response-body)
